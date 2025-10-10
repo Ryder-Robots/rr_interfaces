@@ -5,6 +5,12 @@ Contains the actions, messages and other communication objects used for Ryder ro
 ## Build Instructions
 
 ```bash
+mkdir -p ~/rr_quadx_ws
+cd ~/rr_quadx_ws
+mkdir -p src
+cd src
+git@github.com:Ryder-Robots/rr_interfaces.git
+cd ~/rr_quadx_ws
 colcon build --packages-select rr_interfaces --packages-up-to rr_interfaces
 source install/local_setup.bash
 ros2 interface list | grep rr_interfaces
