@@ -9,11 +9,12 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(unique_identifier_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/FeatureSet.msg" "msg/BufferResponse.msg"
-  DEPENDENCIES builtin_interfaces sensor_msgs
+  DEPENDENCIES builtin_interfaces sensor_msgs unique_identifier_msgs
 )
 
 ament_package()

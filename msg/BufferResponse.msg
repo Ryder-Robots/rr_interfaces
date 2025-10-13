@@ -1,6 +1,9 @@
 # Buffer service provides a list of features that act as input for the 
 # core network.
 
+# Message identifier
+unique_identifier_msgs/UUID guid
+
 # Time buffering occurred.
 builtin_interfaces/Time exec_time
 
