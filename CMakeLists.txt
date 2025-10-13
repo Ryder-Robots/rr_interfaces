@@ -12,7 +12,7 @@ find_package(std_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "action/ImageAction.action"
+  "msg/FeatureSet.msg" "msg/BufferResponse.msg"
   DEPENDENCIES builtin_interfaces sensor_msgs
 )
 
