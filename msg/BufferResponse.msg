@@ -1,11 +1,11 @@
 # Buffer service provides a list of features that act as input for the 
 # core network.
 
+std_msgs/Header header
+
 # Message identifier
 unique_identifier_msgs/UUID guid
 
-# Time buffering occurred.
-builtin_interfaces/Time exec_time
 
 # Support for NEO-6M, note that package ublox_gps, this will publish to topics
 # /fix and /vel

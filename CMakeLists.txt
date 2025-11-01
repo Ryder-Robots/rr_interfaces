@@ -13,7 +13,7 @@ find_package(unique_identifier_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/FeatureSet.msg" "msg/BufferResponse.msg"
+  "msg/FeatureSet.msg" "msg/BufferResponse.msg" "msg/Heartbeat.msg"
   DEPENDENCIES builtin_interfaces sensor_msgs unique_identifier_msgs
 )
 
