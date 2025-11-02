@@ -3,6 +3,9 @@
 
 std_msgs/Header header
 
+# heartbeat link is the link id of the service sending the heartbeat
+string hb_link
+
 # Duration is actual duration it took for a message to be published.
 builtin_interfaces/Duration duration
 
