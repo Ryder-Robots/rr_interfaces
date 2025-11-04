@@ -1,0 +1,4 @@
+# Returns current state
+
+---
+rr_interfaces/BufferResponse buffer_response

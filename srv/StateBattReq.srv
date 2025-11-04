@@ -1,0 +1,4 @@
+# battery feedback (if suported by power board).
+sensor_msgs/BatteryState batt_state
+---
+rr_interfaces/BufferResponse buffer_response

@@ -1,0 +1,10 @@
+# Update GPS state, this will return the state
+# update has been completed
+
+# Support for NEO-6M, note that package ublox_gps, this will publish to topics
+# /fix and /vel
+sensor_msgs/NavSatFix gps
+
+---
+
+rr_interfaces/BufferResponse buffer_response
