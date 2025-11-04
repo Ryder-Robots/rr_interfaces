@@ -1,0 +1,4 @@
+# Sets middle front range sensor_msgs
+sensor_msgs/Range range
+---
+rr_interfaces/BufferResponse buffer_response

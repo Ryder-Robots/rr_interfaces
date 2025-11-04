@@ -20,6 +20,11 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/StateGpsReq.srv"
   "srv/StateJoyReq.srv"
   "srv/StateBattReq.srv"
+  "srv/StateImage.srv"
+  "srv/StateImu.srv"
+  "srv/StateLeftFrontRange.srv"
+  "srv/StateRightFrontRange.srv"
+  "srv/StateMiddleFrontRange.srv"
   DEPENDENCIES builtin_interfaces sensor_msgs unique_identifier_msgs
 )
 
