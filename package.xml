@@ -3,7 +3,7 @@
 <package format="3">
   <name>rr_interfaces</name>
   <version>0.0.1</version>
-  <description>TContains the actions, messages and other communication objects used for Ryder robots.</description>
+  <description>Contains the actions, messages and other communication objects used for Ryder robots.</description>
   <maintainer email="azzmosphere@gmail.com">aaron</maintainer>
   <license>MIT</license>
 
