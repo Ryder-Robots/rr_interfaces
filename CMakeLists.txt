@@ -22,9 +22,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/StateBattReq.srv"
   "srv/StateImage.srv"
   "srv/StateImu.srv"
-  "srv/StateLeftFrontRange.srv"
-  "srv/StateRightFrontRange.srv"
-  "srv/StateMiddleFrontRange.srv"
+  "srv/StateRange.srv"
   DEPENDENCIES builtin_interfaces sensor_msgs unique_identifier_msgs
 )
 
