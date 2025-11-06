@@ -15,7 +15,8 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/FeatureSet.msg" 
   "msg/BufferResponse.msg" 
-  "msg/Heartbeat.msg" 
+  "msg/Heartbeat.msg"
+  "msg/BufferRequest.msg"
   "srv/StateResponse.srv" 
   "srv/StateGpsReq.srv"
   "srv/StateJoyReq.srv"
