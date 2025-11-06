@@ -5,7 +5,8 @@ std_msgs/Header header
 
 # Message identifier
 unique_identifier_msgs/UUID guid
-
+unique_identifier_msgs/UUID request_id
+int64 seq
 
 # Support for NEO-6M, note that package ublox_gps, this will publish to topics
 # /fix and /vel
