@@ -11,6 +11,7 @@ find_package(sensor_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(unique_identifier_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/FeatureSet.msg" 
@@ -24,7 +25,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/StateImage.srv"
   "srv/StateImu.srv"
   "srv/StateRange.srv"
-  DEPENDENCIES builtin_interfaces sensor_msgs unique_identifier_msgs
+  DEPENDENCIES builtin_interfaces sensor_msgs unique_identifier_msgs  geometry_msgs
 )
 
 ament_package()
