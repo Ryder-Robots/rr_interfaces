@@ -3,8 +3,9 @@
 
 # Support for NEO-6M, note that package ublox_gps, this will publish to topics
 # /fix and /vel
-sensor_msgs/NavSatFix gps
+bool override_state false
+sensor_msgs/NavSatFix gps_tx
 
 ---
 
-rr_interfaces/BufferResponse buffer_response
+sensor_msgs/NavSatFix gps_rx

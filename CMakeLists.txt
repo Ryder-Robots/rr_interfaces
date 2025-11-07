@@ -14,17 +14,19 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(geometry_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/FeatureSet.msg" 
+  "msg/FeatureSet.msg"
+  "msg/BufferRequest.msg"
   "msg/BufferResponse.msg" 
   "msg/Heartbeat.msg"
-  "msg/BufferRequest.msg"
-  "srv/StateResponse.srv" 
-  "srv/StateGpsReq.srv"
-  "srv/StateJoyReq.srv"
-  "srv/StateBattReq.srv"
-  "srv/StateImage.srv"
-  "srv/StateImu.srv"
-  "srv/StateRange.srv"
+  "msg/Navigation.msg"
+  "srv/BatteryState.srv"
+  "srv/Gps.srv"
+  "srv/Image.srv"
+  "srv/Imu.srv"
+  "srv/Joy.srv"
+  "srv/Navigation.srv"
+  "srv/Range.srv"
+  "srv/State.srv" 
   DEPENDENCIES builtin_interfaces sensor_msgs unique_identifier_msgs  geometry_msgs
 )
 

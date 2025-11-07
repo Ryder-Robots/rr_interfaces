@@ -1,4 +1,0 @@
-# Video stream, done via camera_ros
-sensor_msgs/Image img
----
-rr_interfaces/BufferResponse buffer_response

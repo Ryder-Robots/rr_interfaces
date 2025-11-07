@@ -1,0 +1,5 @@
+# Sets middle front range sensor_msgs
+bool override_state false
+sensor_msgs/Range range_tx
+---
+sensor_msgs/Range range_rx

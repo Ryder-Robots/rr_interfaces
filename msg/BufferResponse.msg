@@ -8,9 +8,8 @@ unique_identifier_msgs/UUID guid
 unique_identifier_msgs/UUID request_id
 int64 seq
 
-# Controls the heading, and points
-geometry_msgs/Vector3 current_point
-geometry_msgs/Vector3 heading_vector
+# Navigation settings
+Navigation navigation
 
 # Support for NEO-6M, note that package ublox_gps, this will publish to topics
 # /fix and /vel

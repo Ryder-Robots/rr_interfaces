@@ -1,0 +1,14 @@
+# Send and/or request navigation settings of robot. if request is set, then navigation
+# will be overwritten and returned.
+# 
+# if request is not set then current state will be returned, but navigation will not
+# be updated.
+#
+# Note that vectors vectors in this service and message are different to the IMU because they
+# are relative to the starting position of the grid, not overall heading vector where the robot
+# started. 
+#
+bool override_state false
+rr_interfaces/Navigation nav_tx
+---
+rr_interfaces/Navigation nav_rs

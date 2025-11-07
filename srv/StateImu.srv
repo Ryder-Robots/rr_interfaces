@@ -1,4 +1,0 @@
-# IMU. Gyro, Mangnometer, etc
-sensor_msgs/Imu imu
----
-rr_interfaces/BufferResponse buffer_response
