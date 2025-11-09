@@ -1,8 +1,0 @@
-# Returns current state
-#
-# Note that state cannot be overidden, nodes can only update specific attributes within a 
-# state.
-
-rr_interfaces/BufferRequest buffer_request
----
-rr_interfaces/BufferResponse buffer_response
