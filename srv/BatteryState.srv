@@ -1,9 +1,0 @@
-# battery feedback (if suported by power board).
-# 
-# If request is not set then current state is sent back, otherwise current state
-# is overridden and returned back.
-
-bool override_state false
-sensor_msgs/BatteryState batt_state_tx
----
-sensor_msgs/BatteryState batt_state_rx

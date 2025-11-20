@@ -1,5 +1,0 @@
-# IMU. Gyro, Mangnometer, etc
-bool override_state false
-sensor_msgs/Imu imu_tx
----
-sensor_msgs/Imu imu_rx

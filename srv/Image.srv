@@ -1,5 +1,0 @@
-# Video stream, done via camera_ros
-bool override_state false
-sensor_msgs/Image img_tx
----
-sensor_msgs/Image img_rx

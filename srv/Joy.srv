@@ -1,4 +1,0 @@
-bool override_state false
-sensor_msgs/Joy joystick_tx
----
-sensor_msgs/Joy joystick_rx

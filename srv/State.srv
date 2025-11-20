@@ -1,0 +1,5 @@
+# Request GID
+unique_identifier_msgs/UUID request_id
+---
+# Current state
+rr_interfaces/StateFrame state_frame
