@@ -16,7 +16,11 @@ find_package(geometry_msgs REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/FeatureSet.msg"
   "msg/StateFrame.msg" 
+  "msg/Motor.msg"
+  "msg/Action.msg"
   "srv/State.srv"
+  "srv/SensorCmd.srv"
+  "srv/Monitor.srv"
   DEPENDENCIES builtin_interfaces sensor_msgs unique_identifier_msgs  geometry_msgs
 )
 

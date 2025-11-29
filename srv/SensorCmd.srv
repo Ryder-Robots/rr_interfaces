@@ -1,0 +1,22 @@
+# Generic action command, provided to simplify action common, and plugin interfaces.
+# Note that the interface will set the specific action, and only one action be provided
+# by the Node.
+#
+# When an action is sent, the response even on SUCCESS will provide the actual
+# values that are set.
+
+# Request GID
+unique_identifier_msgs/UUID request_id
+int32 command
+rr_interfaces/Action action
+---
+unique_identifier_msgs/UUID response_id
+int64 sequence_id
+rr_interfaces/Action action
+
+# STATUSES are:
+# 0 : SUCCESS
+# 1 : FAILED
+# 2 : TIMEOUT
+# 4 : CRITICAL
+byte status
