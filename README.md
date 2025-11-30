@@ -14,11 +14,12 @@ Events provied to interfaces, are represented by int32, and are defined beneath.
 
 ### Monitor Commands
 
-| ID.     | CONSTANT        |  SENSOR   | DESCRIPTION              |
-| ------  | --------------  | --------- | ------------------------ |
-| 102     | MSP_RAW_IMU.    | IMU       | Monitor IMU details      |
-| 104     | MSP_MOTOR       | MOTORS    | Set, or monitor motors.  |
-| 105     | MSP_RAW_SENSORS | Range     | Range sensors            |
+| ID.     | CONSTANT        |  SENSOR   | DESCRIPTION                            |
+| ------  | --------------  | --------- |  ------------------------------------- |
+| 100     | MSP_IDENT       | NA        | protocol version + capability variable |
+| 102     | MSP_RAW_IMU     | IMU       | Monitor IMU details                    |
+| 104     | MSP_MOTOR       | MOTORS    | Set, or monitor motors.                |
+| 105     | MSP_RAW_SENSORS | Range     | Range sensors                          |
 
 
 
