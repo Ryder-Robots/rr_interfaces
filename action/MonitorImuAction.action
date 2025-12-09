@@ -18,11 +18,17 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+# REQUEST
+#=========
 
 # request is a monitor request. For this FRAME_ID (see header) and time (see stamp header) sent is required.
 std_msgs/Header header
 
 ---
+
+# RESULT
+# ======
+
 # Standard message header.
 std_msgs/Header header
 
@@ -34,3 +40,15 @@ sensor_msgs/Imu imu
 
 # returns true if last command was successful, otherwise false.
 bool success
+
+---
+
+# FEEDBACK
+# ========
+
+#   Action request GUID provided by ROS2 middleware.
+unique_identifier_msgs/UUID uuid
+
+# Status, note that if status is success result.success will be true, if status = fail, or timeout, result.status
+# will be false.
+int8 status # 0 = sent, 1 = processing, 2 = success, 3 = fail,  4 = timeout 

@@ -21,7 +21,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/State.srv"
   "srv/SensorCmd.srv"
   "srv/Monitor.srv"
-  "srv/MonitorImuAction.srv"
+  "action/MonitorImuAction.action"
   DEPENDENCIES builtin_interfaces sensor_msgs unique_identifier_msgs  geometry_msgs
 )
 
