@@ -1,27 +1,49 @@
-# Ryer Robots Interfaces
+# Ryder Robots Interfaces
 
 Contains the actions, messages and other communication objects used for Ryder robots.
 
 ## Communication Protocol
 
-Events provied to interfaces, are represented by int32, and are defined beneath.
+Events provided to interfaces are represented by int32, and are defined beneath.
 
 ### Commands
+
 | ID      | CONSTANT        |  SENSOR   | DESCRIPTION              |
 | ------  | --------------  | --------- | ------------------------ |
-| 200     | MSP_SET_RAW_RC. | Motors.   | Sets motors              |
-
+| 200     | MSP_SET_RAW_RC  | Motors    | Sets motors              |
 
 ### Monitor Commands
 
-| ID.     | CONSTANT        |  SENSOR   | DESCRIPTION                            |
+| ID      | CONSTANT        |  SENSOR   | DESCRIPTION                            |
 | ------  | --------------  | --------- |  ------------------------------------- |
 | 100     | MSP_IDENT       | NA        | protocol version + capability variable |
 | 102     | MSP_RAW_IMU     | IMU       | Monitor IMU details                    |
-| 104     | MSP_MOTOR       | MOTORS    | Set, or monitor motors.                |
+| 104     | MSP_MOTOR       | MOTORS    | Set, or monitor motors                 |
 | 105     | MSP_RAW_SENSORS | Range     | Range sensors                          |
 
+## Messages
 
+| Message    | Description                                                        |
+| ---------- | ------------------------------------------------------------------ |
+| Action     | Represents a command action with an event ID                       |
+| Motor      | Individual motor state (direction and PWM)                         |
+| Motors     | Array of Motor messages sent on a single topic                     |
+| FeatureSet | Feature set data                                                   |
+| StateFrame | State frame data                                                   |
+
+## Actions
+
+| Action           | Description         |
+| ---------------- | ------------------- |
+| MonitorImuAction | Monitor IMU details |
+
+## Services
+
+| Service   | Description            |
+| --------- | ---------------------- |
+| State     | State service          |
+| SensorCmd | Sensor command service |
+| Monitor   | Monitor service        |
 
 ## Build Instructions
 
@@ -30,7 +52,7 @@ mkdir -p ~/rr_quadx_ws
 cd ~/rr_quadx_ws
 mkdir -p src
 cd src
-git@github.com:Ryder-Robots/rr_interfaces.git
+git clone git@github.com:Ryder-Robots/rr_interfaces.git
 cd ~/rr_quadx_ws
 colcon build --packages-select rr_interfaces --packages-up-to rr_interfaces
 source install/local_setup.bash
@@ -39,8 +61,15 @@ ros2 interface list | grep rr_interfaces
 
 Output should show
 
-* rr_interfaces/action/ImageAction
-
+* rr_interfaces/action/MonitorImuAction
+* rr_interfaces/msg/Action
+* rr_interfaces/msg/FeatureSet
+* rr_interfaces/msg/Motor
+* rr_interfaces/msg/Motors
+* rr_interfaces/msg/StateFrame
+* rr_interfaces/srv/Monitor
+* rr_interfaces/srv/SensorCmd
+* rr_interfaces/srv/State
 
 ## References
 

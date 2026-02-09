@@ -17,6 +17,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/FeatureSet.msg"
   "msg/StateFrame.msg" 
   "msg/Motor.msg"
+  "msg/Motors.msg"
   "msg/Action.msg"
   "srv/State.srv"
   "srv/SensorCmd.srv"

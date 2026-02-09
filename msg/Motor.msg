@@ -1,15 +1,8 @@
-# Response, and request for motors is identical.
-#
-# As with range, the link_id in the header will define which motor
-# to use.
+# Represents an individual motor's state.
+# Used as an element within the Motors message array.
 
-std_msgs/Header header
+# Direction of the motor, true for forward, false for reverse.
+bool direction true
 
-# Values are set as following:
-# 0x0000 not set
-# 0x0001 positive polarity (clockwise)
-# 0x0010 negative polarity (counter clockwise)
-byte direction 0x0000
-
-# level of polarity to use.
+# PWM duty cycle value for the motor.
 int32 pwm  0
