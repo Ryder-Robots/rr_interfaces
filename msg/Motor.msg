@@ -5,4 +5,4 @@
 bool direction true
 
 # PWM duty cycle value for the motor.
-int32 pwm  0
+int32 velocity  0
