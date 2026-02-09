@@ -23,13 +23,14 @@ Events provided to interfaces are represented by int32, and are defined beneath.
 
 ## Messages
 
-| Message    | Description                                                        |
-| ---------- | ------------------------------------------------------------------ |
-| Action     | Represents a command action with an event ID                       |
-| Motor      | Individual motor state (direction and PWM)                         |
-| Motors     | Array of Motor messages sent on a single topic                     |
-| FeatureSet | Feature set data                                                   |
-| StateFrame | State frame data                                                   |
+| Message       | Description                                                     |
+| ------------- | --------------------------------------------------------------- |
+| Action        | Represents a command action with an event ID                    |
+| Motor         | Individual motor state (direction and PWM)                      |
+| Motors        | Array of Motor messages sent on a single topic                  |
+| MotorResponse | Motor controller encoder feedback (velocity, pulses, health)    |
+| FeatureSet    | Feature set data                                                |
+| StateFrame    | State frame data                                                |
 
 ## Actions
 
@@ -65,6 +66,7 @@ Output should show
 * rr_interfaces/msg/Action
 * rr_interfaces/msg/FeatureSet
 * rr_interfaces/msg/Motor
+* rr_interfaces/msg/MotorResponse
 * rr_interfaces/msg/Motors
 * rr_interfaces/msg/StateFrame
 * rr_interfaces/srv/Monitor
