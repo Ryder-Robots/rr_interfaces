@@ -4,5 +4,5 @@
 # Direction of the motor, true for forward, false for reverse.
 bool direction true
 
-# PWM duty cycle value for the motor.
-int32 velocity  0
+# velocity in m/s
+float64 velocity  0
